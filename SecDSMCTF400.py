@@ -11,7 +11,7 @@ def random_string(length, characters=string.digits):
 
 
 def hash_hmac(string):
-    secret = random_string(4)
+    secret = random_string(3)
     print('Secret: ' + secret)
     h = HMAC.new(key=secret.encode(), msg=string, digestmod=MD5)
     # h.update(string)
